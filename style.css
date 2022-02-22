@@ -1,3 +1,4 @@
+/* 18 Discuss reset and normalize */
 * {
     margin: 0;
     padding: 0;
@@ -7,67 +8,56 @@ html {
     scroll-behavior: smooth;
 }
 
+/* 12 Discuss ruleset, selector, declaration, properties & values */
 body {
     background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
+    /* 13 Talk about main font and backups */
 }
+
+/* 14 Show Box Model and add border, margin, and padding */
 
 nav {
     background-color: #ff4821;
     color: whitesmoke;
-    position: fixed;
-    width: 100vw;
-    height: 3em;
-    padding-left: 1.5em;
-    box-shadow: 2px 2px 2px #8f8f8f;
+    position: fixed; /* 15 Keeps navbar on top and front */
+    width: 100vw; /* 16 Responsive width */
+    height: 3em; /* 17 Talk about em reference values */
+    padding-left: 1.5em; /* 19 Needs added padding now */
+    box-shadow: 2px 2px 2px #8f8f8f; /* 20 Show shadow option 8 */
 }
 
 .nav-link {
-    text-decoration: none;
-    color: whitesmoke;
+    text-decoration: none; /* 21 remove bullet points */
+    color: whitesmoke; 
 }
 
 .nav-link:hover {
-    color: black;
+    color: black; /* 22 Action selector :hover to change color */
 }
-
-nav ul li:hover {
-    color: black
-}
-
-/* main {
-    display: flex;
-    flex-shrink: auto;
-} */
 
 .menu {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: left;
-    align-content: stretch;
-    gap: 1em;
-    list-style-type: none;
+    display: flex; /* 23 Flexbox use on menu */
+    justify-content: left; /* 24 Mess around with values to see how it behaves */
+    gap: 1em; /* 24 Final fix to space out the ul items */
+    list-style-type: none; /* 25 remove bullet points */
 }
 
 .menu-options {
-    height: 3em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    height: 3em; /* 26 Adjust container height */
+    display: flex; /* 27 Anchor tags become flex items */
+    align-items: center; /* 28 Discuss cross axis in flexbox */
 }
 
 .main-wrapper {
-    /* width: 70vw; */
-    /* display: flex;
-    flex-direction: column; */
-    padding-top: 3em;
-    gap: 1
+    padding-top: 3em; /* 32 Need to set padding as flexbox and position: fixed do not play nice */
 }
 
 #main-text {
-    font-size: 12em;
+    font-size: 12em; /* 31 */
 }
 
+/* 36 Adjust padding to space containers out */
 #html {
     background-color: #ff4821;
     padding-top: 1em;
@@ -80,16 +70,20 @@ nav ul li:hover {
 }
 
 .text-img-wrapper {
-    display: flex;
-    text-align: justify;
-    align-items: flex-start;
+    display: flex; /* 37 Flexbox to containerize text against image */
+    text-align: justify; /* 38 */
+    align-items: flex-start; /* 39 Main axis adjustmetn */
 }
+
+/* 40 */
 
 .p-img-logos {
     width: 10em;
     height: 10em;
     object-fit: contain;
 }
+
+/* 42 */
 
 .contact-container {
     background-color:#bdbdbd;
@@ -98,8 +92,8 @@ nav ul li:hover {
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* 43 Flex for contact form */
+    flex-direction: column; /* 44 Adjusting from inline to column */
     gap: 0.5em;
 }
 

@@ -16,8 +16,13 @@
 </head>
 <body>
     <!-- Body is everything displayed in the viewport -->
+
     <nav>
+        <!-- 9 Create navbar element -->
         <ul class="menu">
+            <!-- 10 Generate using Emmett -->
+            <!-- ul.menu>li.menu-options*3 -->
+            <!-- 11 Add anchor tags & talk about how #id reference works -->
             <li class="menu-options"><a href="#html" class="nav-link">HTML</a></li>
             <li class="menu-options"><a href="#css" class="nav-link">CSS</a></li>
             <li class="menu-options"><a href="#contact-container" class="nav-link">Contact</a></li>
@@ -25,27 +30,33 @@
     </nav>
 
     <div class="main-wrapper">
+        <!-- 26 We wrap everything else to have option to scalee verything else on the page. -->
     
         <main>
-            <!-- Dominant content of the document -->
+            <!-- 27 Dominant content of the document -->
             <h1 id="main-text">HTML & CSS Lesson</h1>
         </main>
 
+        <!-- 28 Semantic element buildout -->
         <section id="html">
             <h2>HTML</h2>
             <div class="text-img-wrapper">
                 <p>If you utilize the inspector tool and look under the hood of this webpage, you will find this to be a &lt;section&gt tag. This is an example of a semantic element. It's much easier to read than a bunch of &lt;div&gt's. Might be a good idea to see how you can render an element to the client as well (inside inspector as well).</p>
+                <!-- 29 Discuss &lt; for how to render tags themselves -->
                 <div class="img-container">
+                    <!-- 30 Discuss how wrapping img in div's helps flexbox -->
                     <img class="p-img-logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2560px-HTML5_logo_and_wordmark.svg.png" alt="some picture">
                 </div>
                 
             </div>
         </section>
 
+        <!-- 31 Build out a div as well -->
+
         <div id="css">
             <h2>CSS</h2>
             <div class="text-img-wrapper">
-                <p>This particular element is inside of a &lt;div&gt container. These elements are containers for anything. They are the most popular but less human-friendly when it comes to reading code. lsdkjfalsdfkjadslfkj dsalkjdfl adkjfasdl kfjasdlfjk asdlkfj slkjf sad</p>
+                <p>This particular element is inside of a &lt;div&gt container. These elements are containers for anything. They are the most popular but less human-friendly when it comes to reading code.</p>
                 <div class="img-container">
                     <img class="p-img-logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1920px-CSS3_logo_and_wordmark.svg.png" alt="some picture 2">
                 </div>
