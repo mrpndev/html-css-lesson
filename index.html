@@ -1,0 +1,68 @@
+<!-- 1 tab + ! to show them quick boilerplate HTML document -->
+<!DOCTYPE html>
+<html lang="en"> <!-- 2 Defines page language. Helps with accessibility etc. -->
+<head> 
+    <!-- 3 Contains metadata information, title, base, and links to sources -->
+    <meta charset="UTF-8">
+    <!-- 4 Specifies character encoding of the webpage (think Cyrillic, Hangul, Sanskrit, or Hanzi ) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 5 Allows server to gather information about page using HTTP headers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 6 Controls page dimension and scale -->
+    <title>HTML & CSS Lesson</title>
+    <!-- 7 This one shouldn't need a comment -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 8 Connection to the CSS document -->
+</head>
+<body>
+    <!-- Body is everything displayed in the viewport -->
+    <nav>
+        <ul class="menu">
+            <li class="menu-options"><a href="#html" class="nav-link">HTML</a></li>
+            <li class="menu-options"><a href="#css" class="nav-link">CSS</a></li>
+            <li class="menu-options"><a href="#contact-container" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-wrapper">
+    
+        <main>
+            <!-- Dominant content of the document -->
+            <h1 id="main-text">HTML & CSS Lesson</h1>
+        </main>
+
+        <section id="html">
+            <h2>HTML</h2>
+            <div class="text-img-wrapper">
+                <p>If you utilize the inspector tool and look under the hood of this webpage, you will find this to be a &lt;section&gt tag. This is an example of a semantic element. It's much easier to read than a bunch of &lt;div&gt's. Might be a good idea to see how you can render an element to the client as well (inside inspector as well).</p>
+                <div class="img-container">
+                    <img class="p-img-logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2560px-HTML5_logo_and_wordmark.svg.png" alt="some picture">
+                </div>
+                
+            </div>
+        </section>
+
+        <div id="css">
+            <h2>CSS</h2>
+            <div class="text-img-wrapper">
+                <p>This particular element is inside of a &lt;div&gt container. These elements are containers for anything. They are the most popular but less human-friendly when it comes to reading code. lsdkjfalsdfkjadslfkj dsalkjdfl adkjfasdl kfjasdlfjk asdlkfj slkjf sad</p>
+                <div class="img-container">
+                    <img class="p-img-logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1920px-CSS3_logo_and_wordmark.svg.png" alt="some picture 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form" action="">
+                <label for="name">Enter your name:</label>
+                <input id="name-input" type="text" name="name" value="John Wick" required>
+                <label for="email">Enter your email:</label>
+                <input id="email-input" type="email" name="email">
+                <button id="submit-button" type="submit">Send</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
