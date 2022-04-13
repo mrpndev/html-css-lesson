@@ -10,7 +10,7 @@ html {
 
 /* 12 Discuss ruleset, selector, declaration, properties & values */
 body {
-    background-color: whitesmoke;
+    background-color: #ecf0f1;
     font-family: Arial, Helvetica, sans-serif;
     /* 13 Talk about main font and backups */
 }
@@ -18,7 +18,7 @@ body {
 /* 14 Show Box Model and add border, margin, and padding */
 
 nav {
-    background-color: #ff4821;
+    background-color: #2c3e50;
     color: whitesmoke;
     position: fixed; /* 15 Keeps navbar on top and front */
     width: 100vw; /* 16 Responsive width */
@@ -33,7 +33,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: black; /* 22 Action selector :hover to change color */
+    color: #2980b9; /* 22 Action selector :hover to change color */
 }
 
 .menu {
@@ -53,20 +53,26 @@ nav {
     padding-top: 3em; /* 32 Need to set padding as flexbox and position: fixed do not play nice */
 }
 
+#main-heading {
+    padding: 0.5em;
+}
+
 #main-text {
-    font-size: 12em; /* 31 */
+    font-size: 15vw; /* 31 */
 }
 
 /* 36 Adjust padding to space containers out */
 #html {
-    background-color: #ff4821;
+    background-color: #bdc3c7;
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-left: 0.5em;
 }
 
 #css {
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-left: 0.5em;
 }
 
 .text-img-wrapper {
@@ -84,12 +90,6 @@ nav {
 }
 
 /* 42 */
-
-.contact-container {
-    background-color:#bdbdbd;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
 
 .contact-form {
     display: flex; /* 43 Flex for contact form */
@@ -109,9 +109,83 @@ nav {
     width: 35vw;
 }
 
+#form-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #bdc3c7;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.5em;
+}
 
+input[type=email] {
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: 0;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.06);
+}
 
+#message {
+    border: 0;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.06);
+    resize: none;
+}
 
+a[target="_blank"]::after {
+    content: "hello world!!";
+}
 
+.submit {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0;
+    background: #2c3e50;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
 
+.submit:hover {
+    background-color: #34495e;
+}
+
+.submit:active {
+    background-color: #95a5a6;
+}
+
+.button__text,
+.button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+}
+
+.button__icon {
+    font-size: 1.5em;
+    background:rgba(0, 0, 0, 0.06)
+}
+
+.footer {
+    color: white;
+    background-color: #34495e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
